@@ -1,0 +1,138 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    background: #EAC926;
+    border: 10px solid #EAC926;
+   
+}
+header h1{
+    background-image: url("/images/logo-mercado-liebre.svg");
+    background-repeat: no-repeat;
+    text-indent: -200px;
+    overflow: hidden;
+}
+header p{
+    text-align: center;
+}
+header nav ul{
+    padding-left: 0;
+}
+header nav ul li{
+    list-style: none;
+    overflow: auto;
+}
+header nav ul a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+header .buscador{
+    padding: 5px 5px;
+    margin: 15px;
+}
+header i{
+    background: #03264C;;
+    color: white;
+    padding: 5px;
+    margin-left: 50%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+header span{
+    margin-left: 0px;
+}
+
+main section .precio{
+    font-size: 18px;
+    color: black;
+}
+main section p{
+    display: inline;
+    padding: 5px;
+    color: #39b54a;
+    position: relative;
+}
+main section i{
+    color: #39b54a;
+    border-style:groove;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 80%;
+}
+main article{
+    border: 2px solid #ebebeb;
+    position: relative;
+}
+
+section h3{
+    text-align: center;
+}
+
+
+
+
+footer{
+    margin-top: 180px ;
+}
+footer div{
+    text-align: center;
+}
+footer i{
+    color: #03264C;
+    font-size: 50px;
+
+    
+}
+
+footer section{
+    text-align: center;
+}
+
+footer p{
+    color: #666;
+}
+footer h5{
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
