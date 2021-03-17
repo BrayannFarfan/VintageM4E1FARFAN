@@ -169,16 +169,16 @@ footer h5{
 }
 
 
-@media (min-width: 1020px){
+@media (min-width: 1280px){
     header{
-        width: 1024px;
+        width: 1280px;
     }
     section .banner{
-        width: 1024px;
+        width: 1280px;
     }
     main img{
         width: 400px;
-        margin-left: 30%;
+        margin-left: 35%;
     }
     
     header .buscador{
@@ -188,14 +188,14 @@ footer h5{
         font-size: 24px;
     }
     footer p{
-        width: 550px;
+        width: 600px;
         line-height: 25px;
     }
     footer h5{
         font-size: 18px;
     }
     main section i{
-        margin-left: -69%;
+        margin-left: -66%;
     }
 }
 
