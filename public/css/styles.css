@@ -145,8 +145,15 @@ footer h5{
     section h4{
         font-size: 20px;
     }
-    section img{
+    section .banner{
         width: 768px;
+    }
+    main img{
+        width: 334px;
+        margin-left: 25%;
+    }
+    main section i{
+        margin-left: -69%;
     }
     section h3{
         font-size: 22px;
@@ -156,10 +163,41 @@ footer h5{
     line-height: 25px;
     margin-left: 25%;
     }
+    footer h5{
+        font-size: 18px;
+    }
 }
 
 
-
+@media (min-width: 1020px){
+    header{
+        width: 1024px;
+    }
+    section .banner{
+        width: 1024px;
+    }
+    main img{
+        width: 400px;
+        margin-left: 30%;
+    }
+    
+    header .buscador{
+        width: 450px;
+    }
+    header p{
+        font-size: 24px;
+    }
+    footer p{
+        width: 550px;
+        line-height: 25px;
+    }
+    footer h5{
+        font-size: 18px;
+    }
+    main section i{
+        margin-left: -69%;
+    }
+}
 
 
 
