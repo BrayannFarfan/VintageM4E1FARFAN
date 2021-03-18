@@ -7,11 +7,10 @@
 
 header{
     background: #EAC926;
-    border: 10px solid #EAC926;
+    border: 5px solid #EAC926;
     width: 360px;
     padding: 0;
     margin: 0;
-    overflow: auto;
     box-sizing: border-box;
    
 }
@@ -31,6 +30,7 @@ header nav ul{
 }
 header nav{
     margin-top: 15px;
+    margin-left: -100%;
 }
 header nav ul li{
     list-style: none;
@@ -46,10 +46,11 @@ header .buscador{
     margin: 15px;
 }
 header .contenedor{
+    display: inline-block;
     background-color: white;
     width: 28px;
     margin-top: -10px;
-    margin-left: 15px;
+    margin-left: -15px;
 }
 header .contenedor span{
     padding: 5px;
@@ -58,12 +59,18 @@ header i{
     background: #1259c3;;
     color: white;
     padding: 10px;
-    margin-left: 50%;
+    margin-left: 45%;
     border-radius: 5px;
     font-size: 20px;
+    position: absolute;
+    margin-top: -80px;
 }
 header span{
     margin-left: 0px;
+}
+main{
+    width: 90%;
+    margin: 0px auto;
 }
 
 main section .precio{
@@ -83,9 +90,12 @@ main section i{
 }
 main article{
     border: 2px solid #ebebeb;
-    position: relative;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
+main article h4{
+    margin-left: -150%;
+}
 section h3{
     text-align: center;
 }
@@ -131,7 +141,10 @@ footer h5{
         font-size: 20px;
     }
     header i{
-        padding: 15px;
+        margin-left: -100%;
+    }
+    header nav{
+        margin-left: 0;
     }
     header .buscador{
         width: 350px;
@@ -142,8 +155,9 @@ footer h5{
     section p{
         font-size: 20px;
     }
-    section h4{
+    main article h4{
         font-size: 20px;
+        margin-left: 0%;
     }
     section .banner{
         width: 768px;
@@ -153,7 +167,7 @@ footer h5{
         margin-left: 25%;
     }
     main section i{
-        margin-left: -69%;
+        margin-left: -75%;
     }
     section h3{
         font-size: 22px;
@@ -195,7 +209,7 @@ footer h5{
         font-size: 18px;
     }
     main section i{
-        margin-left: -66%;
+        margin-left: -70%;
     }
 }
 
