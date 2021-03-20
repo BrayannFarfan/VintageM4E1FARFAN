@@ -1,17 +1,19 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
     font-family: 'Roboto', sans-serif;
 }
 
-
 header{
     background: #EAC926;
-    border: 5px solid #EAC926;
+    border: 1px solid #EAC926;
     width: 360px;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
    
 }
 header h1{
@@ -20,6 +22,7 @@ header h1{
     text-indent: -200px;
     overflow: hidden;
     box-sizing: border-box;
+    margin: 15px;
 }
 header p{
     text-align: center;
@@ -42,18 +45,25 @@ header nav ul a{
     margin: 0;
 }
 header .buscador{
-    padding: 5px 5px;
+    padding: 10px;
     margin: 15px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin-top: -50px;    
 }
 header .contenedor{
-    display: inline-block;
-    background-color: white;
     width: 28px;
-    margin-top: -10px;
-    margin-left: -15px;
+    border-radius: 5px;
+    margin-left: auto;
+
 }
 header .contenedor span{
+    position: absolute;
     padding: 5px;
+    margin-top: -45px;
+    margin-left: -20px;
+    color: #666;
 }
 header i{
     background: #1259c3;;
@@ -61,9 +71,8 @@ header i{
     padding: 10px;
     margin-left: 45%;
     border-radius: 5px;
-    font-size: 20px;
     position: absolute;
-    margin-top: -80px;
+    margin-top: -100px;
 }
 header span{
     margin-left: 0px;
@@ -82,19 +91,27 @@ main section p{
     color: #39b54a;
     position: relative;
 }
-main section i{
+main section div i{
     color: #39b54a;
     border-style:groove;
     border-radius: 50%;
-    padding: 5px;
+    padding: 7px;
+    margin-left: 80%;
+    position: relative;
+}
+main section div p{
+    display: inline;
+}
+main section  div{
+    margin: 15px;
 }
 main article{
-    border: 2px solid #ebebeb;
+    border: 1px solid #ebebeb;
     margin: 10px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 main article h4{
     margin-left: -150%;
+
 }
 section h3{
     text-align: center;
@@ -104,13 +121,13 @@ section h3{
 
 
 footer{
-    margin-top: 180px ;
+    margin-top: 100px ;
 }
 footer div{
     text-align: center;
 }
 footer i{
-    color: #03264C;
+    color: #1259c3;;
     font-size: 50px;
 
     
@@ -125,12 +142,16 @@ footer p{
     line-height: 20px;
     height: 100px;
 }
+footer h3{
+    color: #666;
+    letter-spacing: 1px;
+}
 footer h5{
     color: #666;
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 361px){
     header{
         width: 768px;
     }
@@ -155,6 +176,9 @@ footer h5{
     section p{
         font-size: 20px;
     }
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     main article h4{
         font-size: 20px;
         margin-left: 0%;
@@ -166,8 +190,9 @@ footer h5{
         width: 334px;
         margin-left: 25%;
     }
-    main section i{
-        margin-left: -75%;
+    main section div{
+        margin: 15px;
+        
     }
     section h3{
         font-size: 22px;
@@ -183,9 +208,9 @@ footer h5{
 }
 
 
-@media (min-width: 1280px){
+@media (min-width: 769px){
     header{
-        width: 1280px;
+        width: 100%;
     }
     section .banner{
         width: 1280px;
@@ -208,14 +233,28 @@ footer h5{
     footer h5{
         font-size: 18px;
     }
-    main section i{
-        margin-left: -70%;
-    }
+   
 }
 
 
+/*seccion del login*/
 
-
+main section .formulario{
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+}
+main section .enviar{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    background-color: #1259c3;
+    color: white;
+}
 
 
 

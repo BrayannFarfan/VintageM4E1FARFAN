@@ -12,3 +12,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('Example app listening on port '+ port);
 });
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/login.html'));
+});
