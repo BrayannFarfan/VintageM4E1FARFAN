@@ -96,12 +96,9 @@ main section div i{
     border-style:groove;
     border-radius: 50%;
     padding: 7px;
-    margin-left: 80%;
     position: relative;
 }
-main section div p{
-    display: inline;
-}
+
 main section  div{
     margin: 15px;
 }
@@ -168,10 +165,16 @@ footer h5{
         margin-left: 0;
     }
     header .buscador{
-        width: 350px;
+        width: 300px;
+        position: absolute;
+        margin-left: 200px;
+    }
+    header .contenedor{
+        margin-right: 250px;
     }
     main section .precio{
         font-size: 22px;
+
     }
     section p{
         font-size: 20px;
@@ -221,7 +224,10 @@ footer h5{
     }
     
     header .buscador{
-        width: 450px;
+        width: 660px;
+    }
+    header .contenedor{
+        margin-right: 400px;
     }
     header p{
         font-size: 24px;
