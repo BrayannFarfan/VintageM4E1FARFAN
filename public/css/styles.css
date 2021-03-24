@@ -88,6 +88,9 @@ main{
 main section .precio{
     color: black;
 }
+main img{
+    margin-left: 10%;
+}
 main section p{
     padding: 5px;
     color: #39b54a;
@@ -212,6 +215,9 @@ footer h5{
         width: 90%;
         margin: 0 auto;
     }
+    main img{
+        margin-left: 0px;
+    }
     main section article div p{
         margin-left: -30px;
         font-size: 16px;
@@ -252,19 +258,20 @@ footer h5{
         position: relative;
         font-size: 22px;
         top: 20px;
-        position: relative;
         left: -175px;
         color: #666;
     }
     main section .oferta{
         position: relative;
         left: -270px;
-    }
+    } 
     footer p{
-    line-height: 25px;
+        margin: 0;
+        line-height: 25px;
     }
     footer h5{
         font-size: 18px;
+        display: flex;
     }
 }
 
@@ -309,19 +316,19 @@ footer h5{
     }
     section .banner{
         width: 100%;
-    }
+    }/*
     footer{
-        border: 1px solid red;
+        
     }
+     
     footer article{
         width: 50%;
-    }
-    footer section div{
-    }
+    }*/
     
-    /*
-    footer article{
-        display: inline-block;
+   
+    footer section .padre{
+        display: flex;
+        justify-content: space-around;
     }
     footer p{
         margin: 0;
@@ -329,8 +336,10 @@ footer h5{
     }
     footer h5{
         font-size: 18px;
-    }*/
-   
+    }
+    footer section article{
+        display: flex;
+    }
 }
 
 
@@ -351,6 +360,10 @@ main section .enviar{
     width: 90%;
     background-color: #1259c3;
     color: white;
+}
+main .formu{
+    display: flex;
+    justify-content: center;
 }
 
 
