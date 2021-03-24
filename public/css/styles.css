@@ -11,7 +11,7 @@ body{
 header{
     background: #EAC926;
     border: 1px solid #EAC926;
-    width: 360px;
+    width: 100%;
     padding: 0;
     margin: 0;
    
@@ -76,6 +76,9 @@ header i{
 }
 header span{
     margin-left: 0px;
+}
+section .banner{
+    width: 100%;
 }
 main{
     width: 90%;
@@ -168,19 +171,33 @@ footer h5{
     header nav{
         margin-left: 15px;
         margin-top: 70px;
-       
+        /*border: 1px solid red;*/
+        display: flex;
+        justify-content:space-between;
     }
+    
     header nav ul{
-        display: inline;
+        /*display: inline;*/
+        display: flex;
+        
     }
-    header nav ul .menulog{
-        float: right;
-        margin: 5px;
+    header nav .menulog{
+        /*float: right;
+        margin: 5px;*/  
+        /*border: 1px solid #1259c3;  */
+        display: flex;
+        justify-content: center;
+        
     }
     header nav ul li{
-        display: inline;
+        /*display: inline;
+        
+        margin: 5px;*/
+        display: flex;
+        justify-content: space-between;
         font-size: 14px;
-        margin: 5px;
+        margin-left: 10px;
+        
     }
     
     header .buscador{
@@ -210,6 +227,7 @@ footer h5{
         height: 300px;
         display: inline-block;
         overflow: hidden;
+
     }
     main section article div i{
         position: relative;
@@ -217,14 +235,13 @@ footer h5{
         bottom: 30px;
     }
     main article h4{
-        margin: 0;
         font-weight: normal;
         margin-top: 15px;
         margin-left: 10px;
     }
     
     section .banner{
-        width: 768px;
+        width: 100%;
     }
     main img{
         width: 200px;
@@ -244,10 +261,7 @@ footer h5{
         left: -270px;
     }
     footer p{
-    width: 400px;
     line-height: 25px;
-    margin-left: 25%;
-    margin-top: 20px;
     }
     footer h5{
         font-size: 18px;
@@ -293,6 +307,19 @@ footer h5{
     main section .oferta{
         left: -46%;
     }
+    section .banner{
+        width: 100%;
+    }
+    footer{
+        border: 1px solid red;
+    }
+    footer article{
+        width: 50%;
+    }
+    footer section div{
+    }
+    
+    /*
     footer article{
         display: inline-block;
     }
@@ -302,7 +329,7 @@ footer h5{
     }
     footer h5{
         font-size: 18px;
-    }
+    }*/
    
 }
 
