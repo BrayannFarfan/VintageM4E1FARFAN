@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(puerto || 3000, function () {
-    console.log('Example app listening on port '+ port);
+    console.log('Servidor corriendo en el puerto 3000');
 });
 
 app.get('/views/login.html', (req, res) => {
