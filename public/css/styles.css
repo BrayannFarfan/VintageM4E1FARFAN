@@ -318,6 +318,11 @@ main section form .enviar2{
         position: relative;
         right: -200px;
         bottom: 30px;
+        transition: all 0.7s;
+    }
+    main section article:hover div i{
+        transform: rotate(360deg);
+        transition: all 0.7s;
     }
     main article h4{
         font-weight: normal;
