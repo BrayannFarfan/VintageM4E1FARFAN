@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main class="main">
+        <section class="formu">
+            <form accion="./views/home.html" method="POST">
+                <input class="formulario" type="text" placeholder="Nombre de usuario" name="usuario" />
+                <input class="formulario" type="password" placeholder="Elegí tu contraseña" name="clave" />
+                <a href="/views/home.html"><input class="enviar" type="submit" value="Enviar"/></a>
+            </form>      
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
