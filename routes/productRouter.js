@@ -3,8 +3,7 @@ const router = express.Router();
 const controllerProduct = require('../controller/productController');
 
 router.get('/', controllerProduct.leerTodos);
-
-//router.get('/creat', controllerProduct.creat);
+router.get('/create', controllerProduct.create);
 router.get('/:id', controllerProduct.detail);
 router.post('/', (req, res) => {
     req.send('recibo datos del formulario de creacion')

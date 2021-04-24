@@ -7,7 +7,6 @@ let controllerProduct ={
     },
     detail: (req, res) => {
         let product = visitados.find(function (i) {
-            console.log('me encoraron:' + i.id)
             return i.id === req.params.id
         })
         if (product) {
@@ -15,7 +14,11 @@ let controllerProduct ={
         } else {
             res.render('error404');
         }
-    } 
+    },
+    create: (req, res) => {
+        console.log('entre a crear')
+        res.render('createProduct');
+    },
 }
 
 module.exports = controllerProduct;

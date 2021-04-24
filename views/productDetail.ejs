@@ -3,6 +3,9 @@
 <%- include('partials/head') %>
 <body>
     <%- include('partials/header') %>
+    <section class="banner">
+        <img src="/images/img-home-banner.jpg" width="360" alt="Banner de ofertas">
+    </section>
     <main>
         <h3>Producto <%= product.id %></h3>
         <div>
@@ -10,6 +13,7 @@
             <h2>$ <%= product.price %></h2>
             <h2><%= product.descuento %></h2>
             <br>
+            <img src="/images/<%= product.image %>" width="200" alt="Cafetera" class="product_img">
             <h4>Descripción:<br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, atque. </h4>
             <form action="/data/<%= product.id %>?_method=DELETE" method="post">
                 <input type="submit" value="Eliminar">

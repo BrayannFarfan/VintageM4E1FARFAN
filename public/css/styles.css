@@ -83,9 +83,6 @@ header i{
 header span{
     margin-left: 0px;
 }
-section .banner{
-    width: 100%;
-}
 main{
     width: 100%;
     margin: 0px auto;
@@ -292,6 +289,7 @@ main section form .enviar2{
     header .contenedor{
         margin-right: 280px;
     }
+   
     .main{
         width: 100%;
         margin: 0 auto;
@@ -339,9 +337,6 @@ main section form .enviar2{
         transition: 0.5s;
     }
     
-    section .banner{
-        width: 100%;
-    }
     main img{
         width: 200px;
         position: relative;
