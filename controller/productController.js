@@ -11,8 +11,6 @@ let controllerProduct ={
         })
         if (product) {
             res.render('productDetail', { product });
-        } else {
-            res.render('error404');
         }
     },
     create: (req, res) => {
@@ -21,7 +19,7 @@ let controllerProduct ={
     store: (req, res) => {
         let producto =
         {
-            id: "11",
+            id: "5",
             name: req.body.name,
             descuento: req.body.descuento,
             price: req.body.price,
@@ -37,9 +35,40 @@ let controllerProduct ={
         })
         if (product) {
             res.render('editProduct', { product });
-        } else {
-            res.render('error404');
+        } 
+    },
+    update: (req, res) => {
+        let producto = {
+            id: req.params.id,
+            name: req.body.name,
+            descuento: req.body.descuento,
+            price: req.body.price,
+            image: req.body.image
+
         }
+        visitados.forEach(function (i) {
+            if (i.id === req.params.id) {
+                i.name = producto.name
+                i.price = producto.price
+                i.descuento = producto.descuento
+            }
+        })
+        res.redirect('/')
+    },
+    destroy: (req, res) => {
+        let menorArray = visitados.filter(function (value) {
+            return value.id !== req.params.id
+        })    
+        visitados = [...menorArray]     
+        res.redirect('/')
+    },
+    cart: (req, res) => {
+        res.render('products/cart');
+    },
+    search: (req, res) => {
+
+        let dataABuscar = req.query
+        res.sed(dataABuscar)
     }
 }
 
