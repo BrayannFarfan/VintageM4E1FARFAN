@@ -1,0 +1,107 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@EstuardFAVE
+cortezalberto /
+ejercicioLu
+
+1
+0
+
+    0
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+
+    Insights
+
+ejercicioLu/views/editProduct.ejs
+@cortezalberto
+cortezalberto viernes mor
+Latest commit 25c1557 14 hours ago
+History
+1 contributor
+73 lines (47 sloc) 2.1 KB
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/header') %>
+
+
+            <section class="banner">
+                <img src="/images/img-home-banner.jpg" alt="Banner de ofertas">
+            </section>
+
+
+            <main>
+                <h3>Edición de Producto</h3>
+                <section class="ultima-visita">
+
+                    <form action="/products/<%=  product.id %>?_method=PUT" method="POST">
+
+                        <div class="field">
+                            <label for="name">Nombre</label>
+                            <div class="control">
+
+                                <input type="text" name="name" value="<%= product.name %>">
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+                            <label for="image">Imagen</label>
+                            <div class="control">
+                                <input type="file" name="image" value="<%= product.image %>" class="product_img">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="price">Precio</label>
+                            <div class="control">
+                                <input type="text" name="price" value="<%= product.price %>">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="descuento">descuento</label>
+                            <div class="control">
+
+                                <input type="text" name="descuento" value="<%= product.descuento  %>">
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit">Editar producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+
+            </main>
+            <%- include('partials/footer') %>
+
+
+    </body>
+
+</html>
+
+   

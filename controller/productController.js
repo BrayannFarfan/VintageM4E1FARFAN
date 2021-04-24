@@ -16,9 +16,31 @@ let controllerProduct ={
         }
     },
     create: (req, res) => {
-        console.log('entre a crear')
-        res.render('createProduct');
+        res.render('create');
     },
+    store: (req, res) => {
+        let producto =
+        {
+            id: "11",
+            name: req.body.name,
+            descuento: req.body.descuento,
+            price: req.body.price,
+            image: "images/img-cafetera-moulinex.jpg"
+        }
+        visitados.push(producto)
+      
+        res.redirect('/')
+    },
+    edit: (req, res) => {
+        let product = visitados.find(function (i) {
+            return i.id === req.params.id
+        })
+        if (product) {
+            res.render('editProduct', { product });
+        } else {
+            res.render('error404');
+        }
+    }
 }
 
 module.exports = controllerProduct;
