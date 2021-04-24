@@ -58,6 +58,12 @@ header .contenedor{
     margin-left: auto;
 
 }
+header .contenedor button{
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -5px;
+    position: absolute;
+}
 header .contenedor span{
     position: absolute;
     padding: 5px;

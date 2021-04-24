@@ -1,5 +1,5 @@
 <article>
-    <img src="/images/<%= product.image %>" width="200" alt="Cafetera" class="product_img">
+    <a href="/product/<%= product.id %>"><img src="/images/<%= product.image %>" width="200" alt="Cafetera" class="product_img"></a>
     <div class="track">
     <i class="fas fa-truck-moving"></i>
     <p class="precio">$<%= product.price %></p>
@@ -7,3 +7,6 @@
     <h4><%= product.name %></h4>
     </div>
 </article>
+
+
+
