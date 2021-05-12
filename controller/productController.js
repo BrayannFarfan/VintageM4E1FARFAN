@@ -1,65 +1,58 @@
-let visitados = require('../data/datosProfuctos');
+
+
+const jsonDB = require('../model/jsonDatabase');
+
+const productModel = jsonDB('products');
+
 
 let controllerProduct ={
     leerTodos : (req, res)=>{
-        let products = [...visitados]
         res.render('home', {products});
     },
-    detail: (req, res) => {
-        let product = visitados.find(function (i) {
-            return i.id === req.params.id
-        })
+    show: (req, res) => {
+        const product = productModel.find(req.params.id);
         if (product) {
-            res.render('productDetail', { product });
+            res.render('detailProduct', { product });
+        } else {
+            res.render('error404');
         }
     },
     create: (req, res) => {
         res.render('create');
     },
     store: (req, res) => {
-        let producto =
-        {
-            id: "5",
-            name: req.body.name,
-            descuento: req.body.descuento,
-            price: req.body.price,
-            image: "images/img-cafetera-moulinex.jpg"
+        if(req.file){
+            const product = req.body;
+            product.image = req.file ? req.file.filename: '';
+            productModel.create(product)
+            res.redirect('/')
+        }else{
+            res.render('create');
         }
-        visitados.push(producto)
-      
-        res.redirect('/')
     },
     edit: (req, res) => {
-        let product = visitados.find(function (i) {
-            return i.id === req.params.id
-        })
+        let product = productModel.find(req.params.id);
         if (product) {
-            res.render('editProduct', { product });
-        } 
+            res.render('editProduct');
+        } else {
+            res.render('error404');
+        }
     },
     update: (req, res) => {
-        let producto = {
-            id: req.params.id,
-            name: req.body.name,
-            descuento: req.body.descuento,
-            price: req.body.price,
-            image: req.body.image
-
+        let product = req.body;
+        if (req.file===undefined) {
+            product.image = req.body.oldImage
+        } else {
+            product.image = req.file.filename 
         }
-        visitados.forEach(function (i) {
-            if (i.id === req.params.id) {
-                i.name = producto.name
-                i.price = producto.price
-                i.descuento = producto.descuento
-            }
-        })
+
+        delete product.oldImage;
+        product.id = req.params.id;
+        productModel.update(product);
         res.redirect('/')
     },
     destroy: (req, res) => {
-        let menorArray = visitados.filter(function (value) {
-            return value.id !== req.params.id
-        })    
-        visitados = [...menorArray]     
+        productModel.delete(req.params.id);
         res.redirect('/')
     },
     cart: (req, res) => {

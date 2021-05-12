@@ -1,0 +1,100 @@
+[
+ {
+  "id": "2",
+  "name": "MacBook Pro 2019",
+  "descuento": "20",
+  "price": "230000",
+  "image": "img-macbook-pro-2019.jpg"
+ },
+ {
+  "id": "3",
+  "name": "Samsung Galaxy S10",
+  "descuento": "10",
+  "price": "70500",
+  "image": "img-samsung-galaxy-s10.jpg"
+ },
+ {
+  "id": "4",
+  "name": "SmartTv Samsung 43",
+  "descuento": 10,
+  "price": 23000,
+  "image": "img-tv-samsung-smart.jpg"
+ },
+ {
+  "name": "brayann farfan",
+  "price": "2580",
+  "descuento": " ",
+  "image": "img-1620667663993.png",
+  "id": 10
+ },
+ {
+  "name": "Pacara Earpod Tree30",
+  "price": "200000",
+  "descuento": "50",
+  "image": "img-1620667778204.png",
+  "id": 11
+ },
+ {
+  "name": " ",
+  "price": " ",
+  "descuento": " ",
+  "image": "img-1620712057956.png",
+  "id": 12
+ },
+ {
+  "name": " ",
+  "price": " ",
+  "descuento": " ",
+  "image": "",
+  "id": 13
+ },
+ {
+  "name": "Pacara Earpod Tree30",
+  "price": " 80",
+  "descuento": "50",
+  "image": "img-1620785089520.png",
+  "id": 14
+ },
+ {
+  "name": "parlantes",
+  "price": "200000",
+  "descuento": "60",
+  "image": "img-1620785154837.png",
+  "id": 15
+ },
+ {
+  "name": "hhhhhh",
+  "price": "200000",
+  "descuento": "41",
+  "image": "img-1620785207920.png",
+  "id": 16
+ },
+ {
+  "name": "Pacara Earpod Tree30",
+  "price": "200000",
+  "descuento": "60",
+  "image": "img-1620785567540.png",
+  "id": 17
+ },
+ {
+  "name": "parlantes",
+  "price": "200000",
+  "descuento": "60",
+  "image": "img-1620785617005.png",
+  "id": 18
+ },
+ {
+  "name": "Pacara Earpod Tree30",
+  "price": "2580",
+  "descuento": "10",
+  "image": "img-1620785994641.png",
+  "id": 19
+ },
+ {
+  "name": "Pacara Earpod Tree30",
+  "price": "41",
+  "descuento": "80",
+  "image": "",
+  "id": 20
+ }
+]

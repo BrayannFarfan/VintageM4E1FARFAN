@@ -1,7 +1,9 @@
-let visitados = require('../data/datosProfuctos');
+const jsonDB = require('../model/jsonDatabase');
+
+const productModel = jsonDB('products');
 let homeController ={
     leerTodos: (req, res) =>{
-        const products = [...visitados]
+        const products = productModel.all();
         res.render('home', {products});
     }
 }

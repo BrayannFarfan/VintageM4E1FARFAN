@@ -14,14 +14,18 @@
                 <h3>Alta de Producto</h3>
                 <section class="ultima-visita">
 
-                        <form action="/products/store" method="POST">
+                        <form action="/products/store" method="POST" enctype="multipart/form-data">
 
+
+                             
                             <div class="field">
                                 <label for="name">Nombre</label>
                                 <div class="control">
-                                    <input type="text" name="name">
+                                    <input type="text" name="name"
+                                    value ="<%= locals.camposDevueltos ? camposDevueltos.name : null %> ">
+
                                 </div>
-                             
+                               
                             </div>
 
                             <div class="field">
@@ -29,21 +33,28 @@
                                 <div class="control">
                                     <input type="file" name="image">
                                 </div>
+                               
                             </div>
 
                             <div class="field">
                                 <label for="price">Precio</label>
                                 <div class="control">
-                                    <input type="text" name="price">
+                                    <input type="text" name="price"
+                                    value ="<%= locals.camposDevueltos ? camposDevueltos.price : null %> ">
+
                                 </div>
+                                
+
                             </div>
 
                             <div class="field">
                                 <label for="descuento">descuento</label>
                                 <div class="control">
                                    
-                                    <input type="text" name="descuento">
+                                    <input type="text" name="descuento"
+                                    value ="<%= locals.camposDevueltos ? camposDevueltos.price : null %> ">
                                 </div>
+                                
                             </div>
 
                          
