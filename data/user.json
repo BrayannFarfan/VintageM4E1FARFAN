@@ -1,0 +1,30 @@
+[
+    {
+     "id": 1,
+     "first_name": "Laird",
+     "last_name": "Skelly",
+     "email": "lskelly0@pagesperso-orange.fr",
+     "password": "RmyWso",
+     "category": "vendedor",
+     "image": null
+    },
+    {
+     "id": 2,
+     "first_name": "Hatti",
+     "last_name": "Tythe",
+     "email": "htythe1@weebly.com",
+     "password": "tlqI7B5",
+     "category": "vendedor",
+     "image": null
+    },
+    {
+     "id": 3,
+     "first_name": "Giffer",
+     "last_name": "Knapper",
+     "email": "gknapper2@cmu.edu",
+     "password": "vUysNI0K",
+     "category": "comprador",
+     "image": null
+    }
+   ]
+   

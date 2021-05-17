@@ -13,7 +13,34 @@ const storage = multer.diskStorage({
     }
 });
 
+
+const {body} = require('express-validator');
+
 const upload = multer({ storage });
+
+const validaciones = [
+   
+    body('name').notEmpty().withMessage('En nombre no puede estar en blanco').bail()
+    
+    .isString().withMessage('Deber ser un String'),
+
+    body('price').notEmpty().withMessage('En precio no puede estar en blanco'),
+    body('descuento').notEmpty().withMessage('En descuento no puede estar en blanco'),
+  
+    body('image').custom((value, {req}) => {
+     let file = req.file
+     if ( !file) {
+        throw new Error('Debe agregar una foto');
+      }
+
+     return true
+
+    })
+] 
+
+
+
+
 
 router.get('/', controllerProduct.leerTodos);
 router.get('/cart', controllerProduct.cart);
@@ -21,7 +48,7 @@ router.get('/create', controllerProduct.create);
 router.get('/:id', controllerProduct.show);
 router.get('/search', controllerProduct.search);
 router.get('/:id/edit', controllerProduct.edit);
-router.post('/store',upload.single('image'), controllerProduct.store);
+router.post('/store',upload.single('image'), validaciones,controllerProduct.store);
 router.put('/:id',upload.single('image'),controllerProduct .update);
 router.delete('/:id', controllerProduct.destroy);
 

@@ -6,15 +6,15 @@
     <main class="main">
         <section class="formularios">
     <div class="formul">
-    <form action="/products/store" method="POST" enctype="multipart/form-data">
+    <form action="/users" method="POST" enctype="multipart/form-data">
         <div>
-            <input class="formulario1" name="nombre y apellido" type="text" placeholder="Nombre y Apellido" autofocus autocomplete="off" pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter">
+            <input class="formulario1" name="nombreCompleto" type="text" placeholder="Nombre y Apellido" autofocus autocomplete="off" >
         </div>
         <div>
-            <input class="formulario1" type="text" placeholder="Nombre de Usuario" pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter" >
+            <input class="formulario1" type="text" placeholder="Nombre De Usuario" name="nombreDeUsuario" >
         </div>
         <div>
-            <input class="formulario1" name="email" type="email" placeholder="E-mail" required>
+            <input class="formulario1" name="email" type="email" placeholder="E-mail" >
         </div>
         <div>
             <p>
@@ -23,10 +23,10 @@
             
         </div>
         <div>
-            <input class="formulario1" name="nacimiento" type="date" required>
+            <input class="formulario1" name="nacimiento" type="date" >
         </div>
         <div>
-            <input class="formulario1" type="text" placeholder="Domicilio" pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter">
+            <input class="formulario1" type="text" placeholder="Domicilio" >
         </div>
         <div>
             <p>
@@ -65,13 +65,13 @@
             </p>
         </div>
         <div>
-            <input type="file" name="fotoUusario" accept="image/*,video/mp4">
+            <input type="file" name="fotoUsuario" accept="image/*,video/mp4">
         </div>
         <div>
-            <input class="formulario1" type="password" placeholder="Elegí tu contraseña" name="usuario" required pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter"/>
+            <input class="formulario1" type="password" placeholder="Elegí tu contraseña" name="usuario" />
         </div>
         <div>
-           <input class="formulario1" type="password" placeholder="confirmá tu contraseña" name="clave" required pattern="[A-Z0-9]{4,10}" title="Ingrese más de un caracter"/>
+           <input class="formulario1" type="password" placeholder="confirmá tu contraseña" name="clave"/>
          </div> 
          <div>      
            <input class="enviar2" type="submit" value="Enviar"/>

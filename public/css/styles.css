@@ -231,7 +231,10 @@ main section form .enviar2{
     color: white;
 }
 
-
+.danger p{
+    width: 100%;
+    color: red;
+}
 
 
 @media (min-width: 361px){

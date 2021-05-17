@@ -96,5 +96,40 @@
   "descuento": "80",
   "image": "",
   "id": 20
+ },
+ {
+  "name": " ",
+  "price": " 20",
+  "descuento": " 1",
+  "image": "img-1620871757674.png",
+  "id": 21
+ },
+ {
+  "name": "  ",
+  "price": "  ",
+  "descuento": "  ",
+  "image": "img-1620872015781.png",
+  "id": 22
+ },
+ {
+  "name": "  ",
+  "price": "  ",
+  "descuento": "  ",
+  "image": "img-1620873128628.svg",
+  "id": 23
+ },
+ {
+  "name": " trartza ",
+  "price": " 70 ",
+  "descuento": " 70 ",
+  "image": "img-1620873248708.png",
+  "id": 24
+ },
+ {
+  "name": "  ",
+  "price": "  ",
+  "descuento": "  ",
+  "image": "img-1620962128978.png",
+  "id": 25
  }
 ]

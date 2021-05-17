@@ -22,7 +22,7 @@ const userRouter = require('./routes/useRouter');
 
 app.use('/', homeRouter);
 
-app.use('/', userRouter);
+app.use('/users', userRouter);
 app.use('/products', productRouter);
 
 

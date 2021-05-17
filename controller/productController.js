@@ -4,6 +4,7 @@ const jsonDB = require('../model/jsonDatabase');
 
 const productModel = jsonDB('products');
 
+const {validationResult}  = require('express-validator');
 
 let controllerProduct ={
     leerTodos : (req, res)=>{
@@ -21,14 +22,20 @@ let controllerProduct ={
         res.render('create');
     },
     store: (req, res) => {
-        if(req.file){
-            const product = req.body;
-            product.image = req.file ? req.file.filename: '';
-            productModel.create(product)
-            res.redirect('/')
-        }else{
-            res.render('create');
-        }
+        const errores = validationResult(req);
+        if(errores.errors.length > 0){
+            return res.render('create', {
+                erroresControlados : errores.mapped(),
+                camposDevueltos: req.body
+        });
+    }
+
+        const product = req.body;
+        product.image = req.file.filename
+
+        productModel.create(product)
+        res.redirect('/')
+    
     },
     edit: (req, res) => {
         let product = productModel.find(req.params.id);
